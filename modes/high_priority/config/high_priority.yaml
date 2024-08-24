@@ -7,4 +7,16 @@ mode:
 
 variable_player:
   shot_burn_b_hit:
-    score: 5000
+    score:
+      int: 2001
+      block: true
+
+  shot_burn_b_unlit_hit:
+    score:
+      int: 201
+      block: false
+
+  shot_burn_b_lit_hit:
+    score:
+      int: 21
+      block: false

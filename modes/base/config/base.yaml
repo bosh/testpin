@@ -20,7 +20,7 @@ timed_switches:
 shot_profiles:
   test_profile:
     advance_on_hit: true
-    block: true
+    block: false
     states:
       - name: 'unlit'
         show: 'pulse_blue'
@@ -36,4 +36,8 @@ shots:
 
 variable_player:
   shot_burn_b_hit:
-    score: 200
+    score: 1001
+  shot_burn_b_unlit_hit:
+    score: 101
+  shot_burn_b_lit_hit:
+    score: 11
