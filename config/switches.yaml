@@ -1,0 +1,94 @@
+#config_version=6
+
+switches:
+  s_right_outer_lane:
+    number: 3208-25
+    tags: playfield_active
+
+  s_right_inner_lane:
+    number: 3208-26
+    tags: playfield_active
+
+  s_right_flipper_eos:
+    number: 3208-28
+    type: 'NC'
+
+  s_right_sling:
+    number: 3208-29
+
+  s_plunger:
+    number: 3208-31
+
+  s_high_voltage_status:
+    number: 3208-8
+
+  s_left_outer_lane:
+    number: 3208-11
+    tags: playfield_active
+
+  s_left_inner_lane:
+    number: 3208-12
+    tags: playfield_active
+
+  s_left_flipper_eos:
+    number: 3208-13
+    type: 'NC'
+
+  s_left_sling:
+    number: 3208-15
+
+  s_trough_ball_jam:
+    number: 3208-17
+    type: 'NC'
+
+  s_trough_ball_1:
+    number: 3208-16
+    type: 'NC'
+
+  s_trough_ball_2:
+    number: 3208-18
+
+  s_trough_ball_3:
+    number: 3208-19
+
+  s_trough_ball_4:
+    number: 3208-20
+
+  s_trough_ball_5:
+    number: 3208-21
+
+  s_mini_flipper:
+    number: 3208-0
+    tags: mini_flipper
+
+  s_left_flipper:
+    number: 3208-1
+    tags: left_flipper
+
+  s_right_flipper:
+    number: 3208-3
+    tags: right_flipper
+
+  s_start:
+    number: 3208-4
+    tags: start
+
+  s_pop_left:
+    number:
+  s_pop_right:
+    number:
+  s_pop_center:
+    number:
+
+  s_vuk_presence:
+    number:
+    type: 'NC'
+
+  s_burn_b:
+    number:
+  s_burn_u:
+    number:
+  s_burn_r:
+    number:
+  s_burn_n:
+    number:

@@ -1,0 +1,29 @@
+#config_version=6
+
+config:
+  - coils.yaml
+  - switches.yaml
+  - lights/config.yaml
+  - devices.yaml
+
+modes:
+  - attract
+  - base
+  - high_priority
+
+machine:
+  balls_installed: 3
+
+game:
+  balls_per_game: 2
+  max_players: 1
+
+player_vars:
+  playfield_multiplier:
+    initial_value: 1
+    value_type: int
+
+virtual_platform_start_active_switches:
+  - s_trough_ball_1
+  - s_trough_ball_2
+  - s_trough_ball_3

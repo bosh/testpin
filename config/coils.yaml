@@ -1,0 +1,48 @@
+#config_version=6
+
+coils:
+  c_auto_plunger:
+    number:
+    default_pulse_ms: 12
+
+  c_trough_eject:
+    number:
+    default_pulse_ms: 15
+
+
+  c_flipper_right_full:
+    number:
+    default_pulse_ms: 25
+
+  c_flipper_right_hold:
+    number:
+    default_hold_power: .5
+    allow_enable: true
+
+  c_right_sling:
+    number:
+    default_pulse_ms: 20
+
+  c_left_sling:
+    number:
+    default_pulse_ms: 20
+
+  c_flipper_left_hold:
+    number:
+    default_hold_power: .5
+    allow_enable: true
+
+  c_flipper_left_full:
+    number:
+    default_pulse_ms: 25
+
+  c_pop_left:
+    number:
+  c_pop_right:
+    number:
+  c_pop_center:
+    number:
+
+  c_vuk:
+    number:
+

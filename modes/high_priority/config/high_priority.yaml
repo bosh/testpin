@@ -1,0 +1,10 @@
+#config_version=6
+
+mode:
+  start_events: start_high_priority
+  stop_events: stop_high_priority
+  priority: 200
+
+variable_player:
+  shot_burn_b_hit:
+    score: 5000

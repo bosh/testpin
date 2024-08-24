@@ -1,0 +1,11 @@
+#show_version=6
+
+# lights are (light)
+
+- duration: 400ms
+  lights:
+    (light): blue
+
+- duration: 200ms
+  lights:
+    (light): off

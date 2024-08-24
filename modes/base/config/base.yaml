@@ -1,0 +1,39 @@
+#config_version=6
+
+config:
+  - light_player.yaml
+
+mode:
+  start_events: ball_started
+  priority: 100
+
+event_player:
+  mode_base_started:
+    - start_high_priority
+
+timed_switches:
+  ts_start_button:
+    time: 3000ms
+    switches:
+      - s_start
+
+shot_profiles:
+  test_profile:
+    advance_on_hit: true
+    block: true
+    states:
+      - name: 'unlit'
+        show: 'pulse_blue'
+      - name: 'lit'
+        show: 'pulse_red'
+
+shots:
+  shot_burn_b:
+    profile: test_profile
+    switch: s_burn_b
+    show_tokens:
+      light: l_burn_b
+
+variable_player:
+  shot_burn_b_hit:
+    score: 200

@@ -1,0 +1,67 @@
+#config_version=6
+
+autofire_coils:
+  slingshot_left:
+    coil: c_left_sling
+    switch: s_left_sling
+  slingshot_right:
+    coil: c_right_sling
+    switch: s_right_sling
+
+  pop_left:
+    coil: c_pop_left
+    switch: s_pop_left
+  pop_right:
+    coil: c_pop_right
+    switch: s_pop_right
+  pop_center:
+    coil: c_pop_center
+    switch: s_pop_center
+
+flippers:
+  right_flipper:
+    main_coil: c_flipper_right_full
+    hold_coil: c_flipper_right_hold
+    eos_switch: s_right_flipper_eos
+    activation_switch: s_right_flipper
+    enable_events: ball_started, enableAutofire
+    disable_events: ball_will_end, service_mode_entered, disableAutofire
+    use_eos: true
+
+  left_flipper:
+    main_coil: c_flipper_left_full
+    hold_coil: c_flipper_left_hold
+    activation_switch: s_left_flipper
+    eos_switch: s_left_flipper_eos
+    enable_events: ball_started, enableAutofire
+    disable_events: ball_will_end, service_mode_entered, disableAutofire
+    use_eos: true
+
+ball_devices:
+  bd_trough:
+    ball_switches: s_trough_ball_1, s_trough_ball_2, s_trough_ball_3, s_trough_ball_4, s_trough_ball_5
+    tags: trough, home, drain
+    eject_coil: c_trough_eject
+    eject_coil_jam_pulse: 15ms
+    jam_switch: s_trough_ball_jam
+    eject_targets: bd_plunger
+    eject_timeouts: 2s
+    debug: true
+
+  bd_plunger:
+    ball_switches: s_plunger
+    mechanical_eject: true
+    eject_timeouts: 2800ms
+    eject_coil: c_auto_plunger
+    player_controlled_eject_event: s_mini_flipper_active
+
+  bd_vuk:
+    ball_switches: s_vuk_presence
+    eject_coil: c_vuk
+    eject_timeouts: 1s
+
+playfields:
+  playfield:
+    default_source_device: bd_plunger
+    tags: default
+    enable_ball_search: false
