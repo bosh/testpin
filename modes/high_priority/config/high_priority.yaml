@@ -8,15 +8,40 @@ mode:
 variable_player:
   shot_burn_b_hit:
     score:
-      int: 2001
+      int: 100001
       block: true
 
   shot_burn_b_unlit_hit:
     score:
-      int: 201
+      int: 10001
       block: false
 
   shot_burn_b_lit_hit:
     score:
-      int: 21
+      int: 1001
       block: false
+
+  high_priority_shot_burn_b_hit:
+    score: 2001
+  high_priority_shot_burn_b_unlit_hit:
+    score: 201
+  high_priority_shot_burn_b_lit_hit:
+    score: 21
+
+
+shot_profiles:
+  high_priority_profile:
+    advance_on_hit: true
+    block: true
+    states:
+      - name: 'unlit'
+        show: 'pulse_white'
+      - name: 'lit'
+        show: 'pulse_green'
+
+shots:
+  high_priority_shot_burn_b:
+    profile: high_priority_profile
+    switch: s_burn_b
+    show_tokens:
+      light: l_burn_b

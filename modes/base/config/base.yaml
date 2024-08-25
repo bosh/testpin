@@ -9,7 +9,13 @@ mode:
 
 event_player:
   mode_base_started:
+    - foo
+  vswitch_start_high_priority_active:
     - start_high_priority
+  vswitch_stop_high_priority_active:
+    - stop_high_priority
+  vswitch_reset_score_active:
+    - reset_score
 
 timed_switches:
   ts_start_button:
@@ -41,3 +47,7 @@ variable_player:
     score: 101
   shot_burn_b_lit_hit:
     score: 11
+  reset_score:
+    score:
+      int: 0
+      action: set

@@ -1,6 +1,13 @@
 #config_version=6
 
 switches:
+  vswitch_start_high_priority:
+    number:
+  vswitch_stop_high_priority:
+    number:
+  vswitch_reset_score:
+    number:
+
   s_right_outer_lane:
     number: 3208-25
     tags: playfield_active
