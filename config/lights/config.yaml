@@ -2,6 +2,7 @@
 
 config:
   - playfield_rings.yaml
+  - info_lights.yaml
 
 lights:
   l_mini_cab_mini:

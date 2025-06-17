@@ -15,8 +15,8 @@ machine:
   balls_installed: 3
 
 game:
-  balls_per_game: 2
-  max_players: 1
+  balls_per_game: 1
+  max_players: 4
 
 player_vars:
   playfield_multiplier:
