@@ -1,0 +1,23 @@
+#config_version=6
+
+hardware:
+  platform: fast, virtual
+  lights: virtual
+  switches: virtual
+  coils: virtual
+
+fast:
+  net:
+    port: auto
+    controller: neuron
+    io_loop:
+      0804:
+        model: FP-I/O-0804
+        order: 1
+  exp:
+    port: auto
+    boards:
+      neuron:
+        model: FP-EXP-2000
+      exp71:
+        model: FP-EXP-0071

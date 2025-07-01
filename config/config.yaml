@@ -1,6 +1,10 @@
 #config_version=6
 
+mpf:
+  report_crashes: never
+
 config:
+  - fast_test_rig.yaml
   - coils.yaml
   - switches.yaml
   - lights/config.yaml
