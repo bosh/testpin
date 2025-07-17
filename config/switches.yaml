@@ -1,6 +1,10 @@
 #config_version=6
 
 switches:
+  s_test_input:
+    number: io84-0
+    platform: fast
+
   vswitch_start_high_priority:
     number:
   vswitch_stop_high_priority:

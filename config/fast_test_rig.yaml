@@ -11,7 +11,7 @@ fast:
     port: auto
     controller: neuron
     io_loop:
-      0804:
+      io84:
         model: FP-I/O-0804
         order: 1
   exp:
