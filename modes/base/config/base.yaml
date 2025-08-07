@@ -8,8 +8,9 @@ mode:
   priority: 100
 
 event_player:
-  mode_base_started:
-    - foo
+  s_test_input_active:
+    update_test_string:
+      text: gotcha
   vswitch_start_high_priority_active:
     - start_high_priority
   vswitch_stop_high_priority_active:
@@ -41,6 +42,11 @@ shots:
       light: l_burn_b
 
 variable_player:
+  update_test_string:
+    test_string:
+      action: set
+      string: "{text}"
+
   shot_burn_b_hit:
     score: 1001
   shot_burn_b_unlit_hit:

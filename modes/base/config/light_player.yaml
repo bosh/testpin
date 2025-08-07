@@ -1,10 +1,5 @@
 #config_version=6
 
-event_player:
-  mode_base_started:
-    - foo
-
-
 light_player:
   # High voltage status warn LED
   "{device.switches.s_high_voltage_status.state == 0}":
